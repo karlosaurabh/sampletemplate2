@@ -1,0 +1,71 @@
+html,body{padding:0px; margin:0px; background:whitesmoke;}
+a{text-decoration:none !important;}
+.header_cont{min-height:100px; width:100%; background:#FFFBE2;}
+
+.creden_block{background:#012636; margin-top:0px;}
+
+.breadcrumb{background:none; margin-bottom:0px;}
+.breadcrumb_cont{background:#02c0ce; margin:0;}
+.breadcrumb_cont ol a{ color:#3e2222; text-decoration:none; border-radius:0px;}
+.breadcrumb_cont .breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #000;
+    content: "/\00a0";
+}
+.status_cont{text-align:right; margin: 10px 0px;}
+.status_cont span{ color:#073336; font-weight:bold; }
+.card-box-height{min-height:460px;}
+.card-box{background:#fff; box-shadow:0 6px 10px rgba(0, 0, 0, 0.05); border-radius:3px; padding:20px; margin:15px 0;}
+.card-box .header-title {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+	font-family:oswald-regular;
+}
+.graph_box{ margin-top:20px;}
+
+.card-box tr:nth-child(even) {background: #fff;}
+.card-box tr:nth-child(odd) {background: #F1F1F1;}
+.login_block{text-align:right;}
+.login_block a{color:#fff; display:inline-block; margin-top:20px; padding:0 15px;}
+.footer_cont{background:#012636; color:whitesmoke; padding:5px;}
+
+
+
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:9999999999;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+/*======================= ============================ ============== */
+/*======================= Media section start from here ============== */
+/*======================= ============================ ============== */
+
+@media (max-width: 762px){
+.card-box{min-height:auto; margin:15px 0;}
+.status_cont{text-align:center; margin: 13px 0px; border-top:1px solid #aaa8a8; padding:15px 0;}
+.header_cont img{width:100%;}
+.creden_block h2{text-align:center;}
+.login_block a{color:#fff; display:inline-block; margin:20px 0; padding:0 15px;}
+.login_block{text-align:center;}
+.breadcrumb{padding:8px 2px;}
+}
